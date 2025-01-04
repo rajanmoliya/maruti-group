@@ -7,11 +7,11 @@ export default function Hero() {
 
       <div className="absolute inset-0 flex items-center justify-center text-center z-10">
         <div className="max-w-4xl px-4 space-y-6">
-          <div className="animate-fade-in-down">
+          <div className="animate-fade-in-down ">
             <span className="text-sm md:text-base text-blue-400 font-semibold uppercase tracking-wider">
               Welcome to Maruti Group
             </span>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mt-2 mb-4">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mt-2 mb-4 ">
               Discover Your Dream Property
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto">

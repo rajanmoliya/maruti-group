@@ -7,7 +7,7 @@ export default function MapComponent() {
         height="100%"
         frameBorder="0"
         style={{ border: 0 }}
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6280.970127761474!2d72.93009714548572!3d20.600828618830775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0e8208249a6cf%3A0xf6b629fd4c95a813!2sValsad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1735394670355!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d933.7626433519024!2d72.93395726004276!3d20.585992196077147!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0c336eaa081a7%3A0x35601a1129efef13!2sMaruti%20villa!5e0!3m2!1sen!2sin!4v1735992976408!5m2!1sen!2sin"
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"

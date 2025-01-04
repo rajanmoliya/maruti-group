@@ -8,6 +8,7 @@ import {
   Instagram,
   Linkedin,
 } from "lucide-react";
+import logo from "../public/MIlogo.png";
 
 export default function Footer() {
   return (
@@ -17,12 +18,13 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Building2 className="h-8 w-8 text-blue-500" />
+              {/* <Building2 className="h-8 w-8 text-blue-500" /> */}
+              <img src={logo} alt="logo" className="w-20 invert" />
               <span className="text-xl font-bold text-white">Maruti Group</span>
             </div>
             <p className="text-sm">
-              Providing luxury real estate solutions with unparalleled service
-              and expertise.
+              Explore our exclusive collection of luxury properties and
+              prestigious developments.
             </p>
           </div>
 
@@ -34,7 +36,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="/projects"
+                  href="/#projects"
                   className="hover:text-blue-400 transition-colors"
                 >
                   Projects
@@ -75,15 +77,25 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-blue-500" />
-                <span>+91 98765 43210</span>
+                <span>+91 81402 63999</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-blue-500" />
-                <span>info@marutiinfratech.com</span>
+                <span>
+                  <a href="mailto:themvilla200@gmail.com">
+                    themvilla200@gmail.com
+                  </a>
+                </span>
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-blue-500" />
-                <span>Valsad, Gujarat</span>
+                <a
+                  href="https://maps.app.goo.gl/S9T3eUfA3tPGji8N6"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Valsad, Gujarat
+                </a>
               </li>
             </ul>
           </div>
@@ -92,13 +104,16 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-blue-400 transition-colors">
+              <a
+                href="https://www.facebook.com/profile.php?id=100093311514768"
+                className="hover:text-blue-400 transition-colors"
+              >
                 <Facebook className="h-6 w-6" />
               </a>
-              <a href="#" className="hover:text-blue-400 transition-colors">
-                <Twitter className="h-6 w-6" />
-              </a>
-              <a href="#" className="hover:text-blue-400 transition-colors">
+              <a
+                href="https://www.instagram.com/maruti___infratech___/"
+                className="hover:text-blue-400 transition-colors"
+              >
                 <Instagram className="h-6 w-6" />
               </a>
               <a href="#" className="hover:text-blue-400 transition-colors">

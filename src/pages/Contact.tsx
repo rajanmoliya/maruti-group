@@ -26,7 +26,12 @@ export default function Contact() {
               <Phone className="w-6 h-6 text-blue-600 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold mb-1">Call Us</h3>
-                <p className="text-gray-600">+91 98765 43210</p>
+                <a
+                  href="tel:+918140263999"
+                  className="text-blue-600 hover:underline"
+                >
+                  +91 81402 63999
+                </a>
               </div>
             </div>
 
@@ -34,7 +39,7 @@ export default function Contact() {
               <Mail className="w-6 h-6 text-blue-600 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold mb-1">Email Us</h3>
-                <p className="text-gray-600">info@marutiinfratech.com</p>
+                <p className="text-gray-600">themvilla200@gmail.com</p>
               </div>
             </div>
 

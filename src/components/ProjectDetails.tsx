@@ -1,4 +1,4 @@
-import { X, MapPin, Home, Bath, Maximize } from 'lucide-react';
+import { X, MapPin, Home, Bath, Maximize } from "lucide-react";
 
 interface ProjectDetailsProps {
   project: {
@@ -8,22 +8,29 @@ interface ProjectDetailsProps {
     description: string;
     status: string;
     price: string;
-    bedrooms: number;
+    bedrooms: string;
     bathrooms: number;
-    sqft: number;
+    sqft: string;
     amenities: string[];
     gallery: string[];
+    parking: string;
   };
   onClose: () => void;
 }
 
-export default function ProjectDetails({ project, onClose }: ProjectDetailsProps) {
+export default function ProjectDetails({
+  project,
+  onClose,
+}: ProjectDetailsProps) {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
       <div className="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
         <div className="sticky top-0 bg-white p-4 border-b flex justify-between items-center">
           <h2 className="text-2xl font-bold">{project.title}</h2>
-          <button onClick={onClose} className="p-2 hover:bg-gray-100 rounded-full">
+          <button
+            onClick={onClose}
+            className="p-2 hover:bg-gray-100 rounded-full"
+          >
             <X className="w-6 h-6" />
           </button>
         </div>

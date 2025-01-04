@@ -4,17 +4,17 @@ import {
   Bath,
   Maximize,
   MapPin,
-  DollarSign,
-  Calendar,
-  Key,
-  Ruler,
   Sun,
   Wind,
+  ParkingCircle,
+  LocateIcon,
+  Cable,
+  Droplet,
+  BrickWall,
 } from "lucide-react";
+
 import { projects } from "../data/projects";
 import ImageGallery from "../components/ImageGallery";
-import PropertyFeatures from "../components/PropertyFeatures";
-import AmenitiesList from "../components/AmenitiesList";
 import LocationMap from "../components/LocationMap";
 import ContactAgent from "../components/ContactAgent";
 import { useEffect } from "react";
@@ -64,13 +64,13 @@ export default function ProjectDetails() {
             {/* Key Details */}
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="flex items-center gap-2">
+                {/* <div className="flex items-center gap-2">
                   <DollarSign className="h-5 w-5 text-blue-600" />
                   <div>
                     <p className="text-sm text-gray-600">Price</p>
                     <p className="font-semibold">{project.price}</p>
                   </div>
-                </div>
+                </div> */}
                 <div className="flex items-center gap-2">
                   <Home className="h-5 w-5 text-blue-600" />
                   <div>
@@ -90,6 +90,13 @@ export default function ProjectDetails() {
                   <div>
                     <p className="text-sm text-gray-600">Area</p>
                     <p className="font-semibold">{project.sqft} sqft</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <ParkingCircle className="h-5 w-5 text-blue-600" />
+                  <div>
+                    <p className="text-sm text-gray-600">Parking</p>
+                    <p className="font-semibold">{project.parking}</p>
                   </div>
                 </div>
               </div>
@@ -115,13 +122,13 @@ export default function ProjectDetails() {
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <h2 className="text-2xl font-semibold mb-4">Property Features</h2>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <div className="flex items-center gap-2">
+                {/* <div className="flex items-center gap-2">
                   <Key className="h-5 w-5 text-blue-600" />
                   <span>Smart Lock System</span>
-                </div>
+                </div> */}
                 <div className="flex items-center gap-2">
-                  <Ruler className="h-5 w-5 text-blue-600" />
-                  <span>High Ceilings</span>
+                  <LocateIcon className="h-5 w-5 text-blue-600" />
+                  <span>Prime Location</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Sun className="h-5 w-5 text-blue-600" />
@@ -129,7 +136,19 @@ export default function ProjectDetails() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Wind className="h-5 w-5 text-blue-600" />
-                  <span>Central Air</span>
+                  <span>China Mosiac + Waterproofing</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Cable className="h-5 w-5 text-blue-600" />
+                  <span>High Quality Wiring</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Droplet className="h-5 w-5 text-blue-600" />
+                  <span>24/7 Water Supply</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <BrickWall className="h-5 w-5 text-blue-600" />
+                  <span>24x38 Vitrified Flooring </span>
                 </div>
               </div>
             </div>

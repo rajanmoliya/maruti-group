@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import sixth from "../public/6.jpg";
+import third from "../public/3.jpg";
+import tenth from "../public/10.jpg";
 
-const images = [
-  "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-  "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-  "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-];
+const images = [sixth, third, tenth];
 
 export default function ImageCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,7 +43,7 @@ export default function ImageCarousel() {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${image})` }}
           >
-            <div className="absolute inset-0 bg-black opacity-60"></div>
+            <div className="absolute inset-0 bg-black opacity-50"></div>
           </div>
         </div>
       ))}

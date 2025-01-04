@@ -26,7 +26,7 @@ export default function ProjectsList() {
                   <img
                     src={project.imageUrl}
                     alt={project.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cove"
                   />
                   <div className="absolute top-4 right-4">
                     <span className="px-3 py-1 bg-blue-600 text-white rounded-full text-sm">
@@ -40,9 +40,9 @@ export default function ProjectsList() {
                     {project.title}
                   </h3>
                   <p className="text-gray-600 mb-2">{project.location}</p>
-                  <p className="text-blue-600 font-semibold mb-4">
+                  {/* <p className="text-blue-600 font-semibold mb-4">
                     {project.price}
-                  </p>
+                  </p> */}
                   <p className="text-gray-700 line-clamp-2">
                     {project.description}
                   </p>
