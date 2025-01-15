@@ -1,9 +1,14 @@
+import image1 from "../public/1.jpg";
+import image3 from "../public/3.jpg";
+import image6 from "../public/6.jpg";
+import image10 from "../public/10.jpg";
+
 export const projects = [
   {
     id: "maruti-villa",
     title: "Maruti Villa",
     location: "Vashiyar, Valsad, Gujarat",
-    imageUrl: "../src/public/3.jpg",
+    imageUrl: image3,
     description:
       "This stunning 3&4 BHK duplex bungalow offers a perfect blend of luxury, comfort, and modern living. Designed with a spacious open floor plan, the bungalow provides a warm and inviting atmosphere from the moment you step in.",
     status: "Now Selling",
@@ -24,12 +29,7 @@ export const projects = [
       "RCC Road",
       "Underground Wiring",
     ],
-    gallery: [
-      "../src/public/1.jpg",
-      "../src/public/6.jpg",
-      "../src/public/10.jpg",
-      "../src/public/3.jpg",
-    ],
+    gallery: [image1, image6, image10, image3],
     locationMap:
       "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d933.7626433519024!2d72.93395726004276!3d20.585992196077147!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0c336eaa081a7%3A0x35601a1129efef13!2sMaruti%20villa!5e0!3m2!1sen!2sin!4v1735991008785!5m2!1sen!2sin",
   },
